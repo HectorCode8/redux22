@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Header />
-        <div className="container" mt-5>
+        <div className="container mt-5">
           <Routes >
             <Route path="/" element={<Products/>}/>
             <Route path="/productos/nuevo" element={<NuevoProducto/>}/>
