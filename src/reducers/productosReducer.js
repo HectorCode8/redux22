@@ -11,8 +11,19 @@ const initialState = {
     loading: false
 }
 
-export default function(state = initialState, action) {
+export default function States (state = initialState, action) {
     switch(action.type) {
+        case AGREGAR_PRODUCTO: 
+            return {
+                ...state,
+                loading: action.payload
+            }
+        case AGREGAR_PRODUCTO_EXITO:
+            return {
+                ...state,
+                loading: false,
+                productos: [...state.productos, action.payload]
+            }
         default:
             return state;
     }
