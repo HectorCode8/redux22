@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
 const Products = () => {
   return (
@@ -12,12 +12,10 @@ const Products = () => {
             <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          
-        </tbody>
+        <tbody></tbody>
       </table>
     </Fragment>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
